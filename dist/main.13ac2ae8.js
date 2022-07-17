@@ -175,7 +175,8 @@ $(".addButton").on("click", function () {
 window.onbeforeunload = function () {
   var string = JSON.stringify(hashmap);
   localStorage.setItem("x", string);
-};
+}; //键盘监听我注释掉了，bug有点多，譬如搜索按到相应key也会打开页面，还有如果有两个相同字母，就很难用，譬如github和google
+
 /*$(document).on("keypress", (e) => {
   const key = e.key;
   for (let i = 0; i < hashmap.length; i++) {
@@ -185,4 +186,4 @@ window.onbeforeunload = function () {
   }
 });*/
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.347ca9d1.js.map
+//# sourceMappingURL=main.13ac2ae8.js.map
